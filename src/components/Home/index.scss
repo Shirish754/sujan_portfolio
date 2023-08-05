@@ -1,0 +1,306 @@
+.bolded {
+  font-family: Helvetica;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0%;
+  padding: 0%;
+  color: #fff;
+}
+
+.welcome {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 16px;
+  font: "Montserrat";
+  font-weight: 700;
+}
+
+// code for rotating ellipse
+// .rotating-ellipse {
+//   width: 200px;
+//   height: 100px;
+//   background-color: #ab1c1c;
+//   border-radius: 50%;
+//   animation: rotate 5s linear infinite;
+//   @keyframes rotate {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// }
+
+// code for solar system like animation
+// .outer-circle {
+//   width: 200px;
+//   height: 100px;
+//   position: relative;
+//   border: 2px solid #000;
+//   border-radius: 50%;
+//   animation: rotate 5s linear infinite;
+// }
+
+// .inner-circle {
+//   width: 30px;
+//   height: 30px;
+//   background-color: #000;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   animation: orbit 5s linear infinite;
+// }
+
+// @keyframes rotate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @keyframes orbit {
+//   0% {
+//     transform: translate(-50%, -50%) rotate(0deg);
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) rotate(360deg);
+//   }
+// }
+
+// .ellipse {
+//   width: 200px;
+//   height: 100px;
+//   position: relative;
+//   border: 2px solid #000;
+//   border-radius: 50%;
+// }
+
+// .moving-circle {
+//   width: 20px;
+//   height: 20px;
+//   background-color: #000;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 50%;
+//   left: 100%;
+//   transform: translate(-50%, -50%);
+//   animation: orbit 5s linear infinite;
+// }
+
+// @keyframes orbit {
+//   0% {
+//     transform: translate(-50%, -50%) rotate(0deg) translateX(80px) rotate(0deg);
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) rotate(360deg) translateX(80px)
+//       rotate(-360deg);
+//   }
+// }
+
+.hometop {
+  height: 55rem;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  .Menu {
+    width: 30vw;
+    background-color: #e0e0e0;
+    .forIcon {
+      height: 14em;
+      display: flex;
+      align-items: center;
+      margin-left: 4rem;
+    }
+    .ant-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // height: 20.8em;
+
+      .menuContent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        .hidden-container {
+          height: 2.3rem;
+          overflow: hidden;
+
+          p {
+            margin: 0;
+            height: 45px;
+            line-height: 30px;
+            transition: 0.6s ease-in-out;
+            cursor: pointer;
+          }
+
+          &:hover p {
+            transform: translate(0, -3rem);
+            color: black;
+          }
+        }
+        .menutop {
+          font-weight: bolder;
+          font-size: 1.2em;
+          padding: 0.1rem;
+          margin: 0.1rem;
+          color: #000000;
+          // margin-bottom: 5em;
+        }
+        .menu {
+          font-weight: bolder;
+          font-size: 2em;
+          padding: 0.1rem;
+          margin: 0.1rem;
+          color: #a3a3a5;
+          transition: 2s linear;
+        }
+      }
+    }
+
+    .yearcontainer {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-right: 5rem;
+      margin-top: 10rem;
+      margin-bottom: 0rem;
+      .year {
+        font-weight: bolder;
+        font-size: 2em;
+        padding: 0.1rem;
+        margin: 0.1rem;
+        color: #a3a3a5;
+      }
+    }
+
+    .decoration {
+      width: 29.5vw;
+      height: 5.69em;
+      background-color: #030303;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      font-weight: 600;
+      padding: 5px;
+      margin-top: 0.1em;
+    }
+  }
+  .About {
+    position: relative;
+    width: 70vw;
+    margin: 0%;
+    padding: 0%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url("../../assets/images/suajn.jpg");
+      filter: grayscale(100%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0%;
+      padding: 0%;
+    }
+    .mainContent {
+      position: relative;
+      .info {
+        min-height: 41em;
+        text-align: left;
+        margin-left: 24vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        // border: 1px solid #fff;
+      }
+      .bottom {
+        display: flex;
+        bottom: 0;
+        align-items: end;
+        height: 14em;
+        // border: 1px solid #fff;
+
+        .about {
+          width: 45em;
+          // min-height: 80%;
+          min-height: 6em;
+
+          background-color: #fb1403;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+          font-weight: 600;
+        }
+        .desc {
+          text-align: left;
+          margin-left: 2em;
+          font-weight: 400;
+          font-size: 20px;
+          color: #fff;
+          font-family: Helvetica;
+        }
+      }
+    }
+  }
+}
+// body {
+//   align-items:center;
+//   background-color:#ccc;
+//   display:flex;
+//   height:100vh;
+//   justify-content:center;
+//   margin:0;
+// }
+
+// .container {
+//   border:solid 4px #fff;
+//   box-shadow:0 0 10px rgba(0,0,0,.25);
+//   height:400px;
+//   overflow:hidden;
+//   position:relative;
+//   width:400px;
+// }
+
+// img {
+//   bottom:0;
+//   left:0;
+//   opacity:.5;
+//   position:absolute;
+//   right:0;
+//   top:0;
+
+//   &:nth-child(3) {
+//     animation:left 3s ease-in-out infinite alternate;
+//   }
+//   &:nth-child(2) {
+//     animation:right 3s ease-in-out infinite alternate;
+//   }
+// }
+
+// @keyframes left {
+//   100% {
+//     filter:hue-rotate(90deg);
+//     transform:translateX(-2%);
+//   }
+// }
+
+// @keyframes right {
+//   100% {
+//     filter:hue-rotate(-90deg);
+//     transform:translateX(2%);
+//   }
+// }

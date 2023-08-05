@@ -1,0 +1,136 @@
+.bolded {
+  font-family: Helvetica;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0%;
+  padding: 0%;
+  color: #fff;
+}
+
+.welcome {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 16px;
+  font: "Montserrat";
+  font-weight: 700;
+}
+
+.ellipse {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.moving-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(80px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(80px) rotate(-360deg);
+  }
+}
+.hometop {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.hometop .Menu {
+  width: 30vw;
+  background-color: #e0e0e0;
+}
+.hometop .Menu .forIcon {
+  height: 35vh;
+}
+.hometop .Menu .menuContent {
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hometop .Menu .decoration {
+  margin-top: 8vh;
+  width: 45em;
+  height: 22vh;
+  background-color: #a6ecb3;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+.hometop .About {
+  position: relative;
+  width: 70vw;
+  margin: 0%;
+  padding: 0%;
+}
+.hometop .About::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1683009427513-28e163402d16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+}
+.hometop .About .mainContent {
+  position: relative;
+}
+.hometop .About .mainContent .info {
+  min-height: 70vh;
+  text-align: left;
+  margin-left: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 8vh;
+}
+.hometop .About .mainContent .bottom {
+  display: flex;
+  bottom: 0;
+  align-items: end;
+  height: 22vh;
+}
+.hometop .About .mainContent .bottom .about {
+  width: 45em;
+  min-height: 100%;
+  background-color: #fb1403;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+.hometop .About .mainContent .bottom .desc {
+  text-align: left;
+  margin-left: 2em;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  font-family: Helvetica;
+}/*# sourceMappingURL=index.css.map */
