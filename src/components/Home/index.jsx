@@ -2,6 +2,20 @@ import "./index.scss";
 import * as Portfolio from "../../assets/images/Portfolio.svg";
 
 export default function Home() {
+  // useEffect(() => {
+  //   const element = document.querySelector(".About::before");
+
+  //   const animationListener = () => {
+  //     element.style.animationPlayState = "paused";
+  //   };
+
+  //   element.addEventListener("animationend", animationListener);
+
+  //   return () => {
+  //     element.removeEventListener("animationend", animationListener);
+  //   };
+  // }, []);
+
   return (
     <div className="hometop">
       <div className="Menu">
